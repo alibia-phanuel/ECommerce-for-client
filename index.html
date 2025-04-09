@@ -1,80 +1,296 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="normalize.css" rel="stylesheet" type="text/css">
-    <link href="reset.css" rel="stylesheet" type="text/css">
-    <link href="styles.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Karine Gélinas Studio</title> 
-</head>
-<body>
-
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="./responsive.css" rel="stylesheet" type="text/css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Karine Gélinas Studio</title>
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <img src="Images/Logo KGS.svg"></div>
-        <div class="nav"><h3><a href="#about">À propos</a> | <a href="#realisations">Boutique</a> | <a href="#contact">Contact</a>
+      <!-- Conteneur principal de la barre de navigation -->
+      <div class="container boxMenu">
+        <!-- Section du logo -->
+        <div class="">
+          <!-- Logo du site -->
+          <img
+            src="Images/Logo KGS.svg"
+            class="logo"
+            alt="Logo Karine Gélinas Studio"
+          />
         </div>
+
+        <!-- Section des liens de navigation -->
+        <div class="nav">
+          <h3>
+            <!-- Lien vers la page d'accueil -->
+            <a href="/"> <i class="fas fa-home"></i> Accueil </a>
+            |
+            <!-- Lien vers la section À propos (ancre) -->
+            <a href="#about"> <i class="fas fa-user"></i> À propos </a>
+            |
+            <!-- Lien vers la section Boutique (ancre) -->
+            <a href="#realisations"> <i class="fas fa-store"></i> Boutique </a>
+            |
+            <!-- Lien vers la section Contact (ancre) -->
+            <a href="#contact"> <i class="fas fa-envelope"></i> Contact </a>
+          </h3>
+        </div>
+
+        <!-- Icône du menu burger pour le responsive (mobile) -->
+        <div class="menu-icons">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
     </header>
-
-    <div class="image">
-        <h1><center>Votre aventure au Studio<br>commence ici !</h1>
-    </div>
-
-
-    <a name="about"></a>
-        <div class="about"><h2>À propos de moi</div>
-            <div class="blogue">
-               <p>Bienvenue chez Karine Gélinas Studio ! Je suis Karine Gélinas, designer graphique passionnée et diplômée en infographie. Mon objectif est de concevoir des designs et des applications qui allient utilité et amusement, apportant une touche de créativité à chaque projet. En collaboration avec un développeur expérimenté, c'est avec une approche centrée sur l'utilisateur que nous nous efforçons de concevoir des solutions innovantes qui répondent à vos besoins quotidiens !<br>
-                Merci de votre visite !</p>
+    <!-- Section Héro avec une image en arrière-plan -->
+    <section class="hero">
+      <h1 data-aos="fade-up">
+        Votre aventure au Studio<br />
+        commence ici !
+      </h1>
+      <!-- Titre principal centré de la page -->
+    </section>
+    <div id="about" style="height: 100px"></div>
+    <!-- Section "À propos" -->
+    <section class="abouts">
+      <!-- Conteneur principal pour le contenu de la section -->
+      <div class="container">
+        <!-- Sous-section pour le titre "À propos" -->
+        <div class="about" data-aos="fade-left">
+          <h2>À propos de moi</h2>
         </div>
-
-        <a name="realisations"></a>
-        <div class="realisations"><h2>Découvrez la boutique</div>
-            <!--l'agenda et l'editeur de photo avec description et images-->
-            <div class="bloc">
-<!--Description
-            <p>L'organisateur est l'application tout-en-un conçue pour vous aider à rester organisé,<br>à gérer votre budget et à ne jamais manquer un rendez-vous.<br>Avec une interface intuitive et épurée, nous misons sur la simplicité <br>pour que la gestion de votre quotidien soit un véritable jeu d'enfant.
-            <p>Fonctionnalités clés :</p>
-                <ul>
-                    <li>
-                        <p> Agenda intégré : Planifiez vos rendez-vous et événements facilement.</p>
-                    </li>
-                    <li>
-                        <p> Gestion du budget: Suivez vos dépenses.</p>
-                    </li>
-                    <li>
-                        <p> Rappels intelligents: Notification sur votre cellulaire. </p>
-                    </li>
-                </ul>
-                <p>Créer en collaboration avec Alibia - Développement web et mobile</p>
-                -->
-                <a href="#" class="button"><p>Je magasine</p></a>  
-        </div>
-    </div>
-    
-    <a name="contact"></a>
-    <div class="contact"><h2>Des questions ou des commentaires ? Contactez-moi</div>
-    <footer>
-            <!--Formulaire de contact-->
-            <div class="mail">
-                <form action="mailto:karinegelinasstudio@gmail.com" method="post" enctype="text/plain">
-                     <label for="nom">Nom</label>
-                     <input type="text" id="nom" name="nom" placeholder="Écrivez votre nom complet">
-                     <label for="courriel">Courriel</label>
-                     <input type="text" id="courriel" name="courriel" placeholder="Écrivez votre courriel">
-                     <textarea>Message</textarea>
-                     <input type="submit" value="Envoyez">
-         
-                </form>
-        </div>
-        <div class="end">
-            <p>©Karine Gélinas Studio <span id="year">2025</span>. Tous droits réservés.</p>
+        <!-- Conteneur flexible pour les éléments texte + image -->
+        <div class="infos">
+          <!-- Bloc de texte descriptif (colonne gauche) -->
+          <div data-aos="fade-right" class="blogue">
+            <!-- Paragraphe de présentation de Karine Gélinas -->
+            <p>
+              Bienvenue chez Karine Gélinas Studio ! Je suis Karine Gélinas,
+              designer graphique passionnée et diplômée en infographie. Mon
+              objectif est de concevoir des designs et des applications qui
+              allient utilité et amusement, apportant une touche de créativité à
+              chaque projet. En collaboration avec un développeur expérimenté,
+              c'est avec une approche centrée sur l'utilisateur que nous nous
+              efforçons de concevoir des solutions innovantes qui répondent à
+              vos besoins quotidiens !<br />
+              Merci de votre visite !
+            </p>
           </div>
-    </footer>
 
-</body>
+          <!-- Bloc image (colonne droite) -->
+          <div data-aos="zoom-in" class="personne">
+            <!-- Image de profil temporaire (remplacer par la vraie photo) -->
+
+            <img
+              class=""
+              src="https://images.unsplash.com/photo-1452830978618-d6feae7d0ffa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="personne"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="realisations" style="height: 100px"></div>
+    <section class="shop">
+      <div class="realisations container">
+        <h2 class="title" data-aos="fade-left">Découvrez la boutique</h2>
+        <div class="product-grid">
+          <div data-aos="zoom-in" class="product-card">
+            <div class="imgBox">
+              <img
+                class="img-product"
+                src="https://images.unsplash.com/photo-1581079949099-ea95c980d186?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Palette Pastel Doux"
+              />
+            </div>
+            <div class="textContent">
+              <div class="price">
+                <h3>Palette Pastel Doux</h3>
+                <p class="prices">$12.99</p>
+              </div>
+              <p class="desc">
+                Plongez dans un univers apaisant où les douceurs s'expriment !
+                Cette palette aux teintes nuancées de rose poudré, bleu ciel et
+                lavande offre une harmonie parfaite pour vos créations
+                délicates. Idéale pour les designs romantiques, les projets
+                maternels ou les illustrations poétiques, elle apporte une
+                touche de sérénité à chaque coup de pinceau. 🌸
+              </p>
+              <button>Acheter</button>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in" class="product-card">
+            <div class="imgBox">
+              <img
+                class="img-product"
+                src="https://images.unsplash.com/photo-1618513462042-29ac20aefe11?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Palette Vibrante"
+              />
+            </div>
+
+            <div class="textContent">
+              <div class="price">
+                <h3>Palette Vibrante</h3>
+                <p class="prices">$15.49</p>
+              </div>
+
+              <p class="desc">
+                Inspirez-vous des richesses de la nature ! Composée d'ocres
+                chaleureux, de verts moussus et de bruns terreux, cette palette
+                évoque l'authenticité et l'équilibre. Parfaite pour les marques
+                éco-responsables, les packaging artisanaux ou les œuvres aux
+                accents organiques, elle transforme chaque projet en une ode à
+                la beauté sauvage. 🌿
+              </p>
+              <button>Acheter</button>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in" class="product-card">
+            <div class="imgBox">
+              <img
+                class="img-product"
+                src="https://cdn.pixabay.com/photo/2014/10/21/19/31/color-fan-497001_1280.jpg"
+                alt="Palette Terre Nature"
+              />
+            </div>
+
+            <div class="textContent">
+              <div class="price">
+                <h3>Palette Vibrante</h3>
+                <p class="prices">$15.49</p>
+              </div>
+
+              <p class="desc">
+                Osez l'audace colorée ! Ce mélange explosif de magenta
+                électrique, de jaune soleil et de turquoise perçant est fait
+                pour capter tous les regards. Conçue pour les designs modernes,
+                les publicités percutantes ou les créations digitales, elle
+                insuffle énergie et confiance en chaque réalisation. Parfaite
+                pour ceux qui aiment se démarquer ! 💥
+              </p>
+              <button>Acheter</button>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in" class="product-card">
+            <div class="imgBox">
+              <img
+                class="img-product"
+                src="https://bfxfacepaintshop.co.uk/cdn/shop/products/FusionBodyartTropicalTigerFX_1024x1024.jpg?v=1624120942"
+                alt="Palette Terre Nature"
+              />
+            </div>
+
+            <div class="textContent">
+              <div class="price">
+                <h3>Palette Fusion Tropicale</h3>
+                <p class="prices">$16.99</p>
+              </div>
+
+              <p class="desc">
+                La Palette Fusion Tropicale éclate en couleurs vibrantes
+                (corail, bleu lagune, jaune mangue), évoquant une énergie
+                estivale. Parfaite pour illustrations dynamiques, identités de
+                marques vives et designs événementiels, elle stimule créativité
+                et optimisme. Idéale pour ceux qui veulent insuffler une
+                ambiance de vacances ensoleillées à leurs projets, toute l'année
+                ! 🎨
+              </p>
+              <button>Acheter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="contact" style="height: 100px"></div>
+    <section class="contact">
+      <div class="container">
+        <div class="contact-container">
+          <div class="contact" data-aos="fade-left">
+            <h2>Des questions ou des commentaires ? Contactez-moi</h2>
+          </div>
+
+          <div class="mail">
+            <form
+              action="mailto:karinegelinasstudio@gmail.com"
+              method="post"
+              enctype="text/plain"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-center"
+            >
+              <div class="input-group">
+                <div>
+                  <label for="nom">Nom</label>
+                  <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    placeholder="Écrivez votre nom complet"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="courriel">Courriel</label>
+                  <input
+                    type="email"
+                    id="courriel"
+                    name="courriel"
+                    placeholder="Écrivez votre courriel"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="textarea">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Votre message ici..."
+                  required
+                ></textarea>
+              </div>
+
+              <input type="submit" value="Envoyez" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        ©Karine Gélinas Studio <span id="year"></span>. Tous droits réservés.
+      </p>
+    </footer>
+  </body>
+  <script>
+    const yearSpan = document.getElementById("year");
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

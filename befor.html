@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Karine Gélinas Studio</title>
+  </head>
+
+  <body>
+    <header class="">
+      <div class="container">
+        <div class="logo">
+          <img src="Images/Logo KGS.svg" alt="Logo Karine Gélinas Studio" />
+        </div>
+        <div class="nav">
+          <h3>
+            <a href="#about">À propos</a> |
+            <a href="#realisations">Boutique</a> |
+            <a href="#contact">Contact</a>
+          </h3>
+        </div>
+      </div>
+    </header>
+
+    <div class="image">
+      <h1 style="text-align: center">
+        Votre aventure au Studio<br />
+        commence ici !
+      </h1>
+    </div>
+
+    <section class="abouts">
+      <div class="container">
+        <div class="about">
+          <h2>À propos de moi</h2>
+        </div>
+        <div class="infos">
+          <div class="blogue">
+            <p>
+              Bienvenue chez Karine Gélinas Studio ! Je suis Karine Gélinas,
+              designer graphique passionnée et diplômée en infographie. Mon
+              objectif est de concevoir des designs et des applications qui
+              allient utilité et amusement, apportant une touche de créativité à
+              chaque projet. En collaboration avec un développeur expérimenté,
+              c'est avec une approche centrée sur l'utilisateur que nous nous
+              efforçons de concevoir des solutions innovantes qui répondent à
+              vos besoins quotidiens !<br />
+              Merci de votre visite !
+            </p>
+          </div>
+          <div class="personne">
+            <img
+              class=""
+              src="https://images.unsplash.com/photo-1452830978618-d6feae7d0ffa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="personne"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a name="realisations"></a>
+    <div class="realisations">
+      <h2>Découvrez la boutique</h2>
+    </div>
+
+    <div class="bloc">
+      <!--
+    <p>L'organisateur est l'application tout-en-un conçue pour vous aider à rester organisé,<br>à gérer votre budget et à ne jamais manquer un rendez-vous.<br>Avec une interface intuitive et épurée, nous misons sur la simplicité <br>pour que la gestion de votre quotidien soit un véritable jeu d'enfant.</p>
+    <p>Fonctionnalités clés :</p>
+    <ul>
+      <li><p>Agenda intégré : Planifiez vos rendez-vous et événements facilement.</p></li>
+      <li><p>Gestion du budget: Suivez vos dépenses.</p></li>
+      <li><p>Rappels intelligents: Notification sur votre cellulaire.</p></li>
+    </ul>
+    <p>Créé en collaboration avec Alibia - Développement web et mobile</p>
+    -->
+      <a href="#" class="button"><p>Je magasine</p></a>
+    </div>
+
+    <a name="contact"></a>
+
+
+        <div class="end">
+          <p>
+            ©Karine Gélinas Studio <span id="year"></span>. Tous droits
+            réservés.
+          </p>
+        </div>
+      </div>
+ 
+  </body>
+  <script>
+    const yearSpan = document.getElementById("year");
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+  </script>
+</html>

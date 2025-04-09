@@ -9,13 +9,15 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-b, strong {
+b,
+strong {
   font-weight: bolder;
 }
 small {
   font-size: 80%;
 }
-sub,sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -35,15 +37,17 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; 
-  font-size: 100%; 
-  line-height: 1.15; 
-  margin: 0; 
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
 }
-button, input { 
+button,
+input {
   overflow: visible;
 }
-button, select { 
+button,
+select {
   text-transform: none;
 }
 button,
@@ -70,20 +74,21 @@ fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 legend {
-  box-sizing: border-box; 
-  color: inherit; 
-  display: table; 
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
   max-width: 100%;
-  padding: 0; 
+  padding: 0;
   white-space: normal;
 }
 
 textarea {
   overflow: auto;
 }
-[type="checkbox"], [type="radio"] {
-  box-sizing: border-box; 
-  padding: 0; 
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
 }
 
 [type="number"]::-webkit-inner-spin-button,
@@ -92,8 +97,8 @@ textarea {
 }
 
 [type="search"] {
-  -webkit-appearance: textfield; 
-  outline-offset: -2px; 
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -119,3 +124,10 @@ template {
 [hidden] {
   display: none;
 }
+
+.end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

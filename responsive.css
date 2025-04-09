@@ -1,0 +1,122 @@
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0; /* équivalent à px-4 */
+    padding-right: 0;
+  }
+  .menu-icons {
+    display: block;
+    position: relative;
+    right: 10%;
+    cursor: pointer;
+  }
+  header {
+    position: relative;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f1f1f1;
+    border-top: 1px solid #000;
+    top: 78px;
+    width: 100%;
+    padding: 30px 0px;
+    left: 0;
+    transform: translatex(-1000px);
+    -webkit-transform: translatex(-1000px);
+    -moz-transform: translatex(-1000px);
+    -ms-transform: translatex(-1000px);
+    -o-transform: translatex(-1000px);
+  }
+
+  .nav h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    right: 0;
+    bottom: 50%;
+    font-size: 55px;
+  }
+  /* responsive shoping card */
+  .title {
+    text-align: center;
+    margin: 40px 0px;
+  }
+  .product-card {
+    flex: 1 1 100%; /* Pleine largeur sur mobile */
+    margin-bottom: 1.5rem;
+  }
+
+  .product-grid {
+    gap: 1rem;
+  }
+
+  .product-card img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1276px) {
+  .about {
+    color: #333;
+    position: relative;
+    top: 0px;
+    margin: 40px 0px;
+  }
+  .product-grid {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+  .product-card {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 866px) {
+  .abouts {
+    padding: 20px;
+  }
+  .about,
+  .bou {
+    text-align: center;
+  }
+  .about {
+    color: #333;
+    position: relative;
+    top: 0px;
+    margin: 40px 0px;
+  }
+  .image h1 {
+    font-size: 50px;
+  }
+  .infos {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .personne {
+    width: 100%;
+    margin: 30px 0px;
+  }
+  .blogue {
+    width: 100%;
+
+    display: flex;
+  }
+}

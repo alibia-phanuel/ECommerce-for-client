@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="./responsive.css" rel="stylesheet" type="text/css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Karine Gélinas Studio | Boutique</title>
+  </head>
+  <body>
+    <header>
+      <!-- Conteneur principal de la barre de navigation -->
+      <div class="container boxMenu">
+        <!-- Section du logo -->
+        <div class="">
+          <!-- Logo du site -->
+          <img
+            src="Images/Logo KGS.svg"
+            class="logo"
+            alt="Logo Karine Gélinas Studio"
+          />
+        </div>
+
+        <!-- Section des liens de navigation -->
+        <div class="nav">
+          <h3>
+            <!-- Lien vers la page d'accueil -->
+            <a href="/"> <i class="fas fa-home"></i> Accueil </a>
+            |
+            <!-- Lien vers la section À propos (ancre) -->
+            <a href="#about"> <i class="fas fa-user"></i> À propos </a>
+            |
+            <!-- Lien vers la section Boutique (ancre) -->
+            <a href="/boutique.html"> <i class="fas fa-store"></i> Boutique </a>
+            |
+            <!-- Lien vers la section Contact (ancre) -->
+            <a href="#contact"> <i class="fas fa-envelope"></i> Contact </a>
+          </h3>
+        </div>
+
+        <!-- Icône du menu burger pour le responsive (mobile) -->
+        <div class="menu-icons">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Section Héro avec une image en arrière-plan -->
+    <section class="shop-hero">
+      <h1 data-aos="fade-up">
+        Nuances d'Émotion <br />
+        –<br />
+      </h1>
+      <!-- Titre principal centré de la page -->
+    </section>
+
+    <!-- Section "À propos" -->
+
+    <section class="shop boutique">
+      <div class="realisations container">
+        <h2 class="title" data-aos="fade-left">Trouvez la Teinte Parfaite</h2>
+        <div class="product-grid">
+          <div style="overflow: hidden" data-aos="zoom-in" class="product-card">
+            <div class="imgBox">
+              <img
+                class="img-product"
+                src="./produits/one/01.png"
+                alt="Palette Pastel Doux"
+              />
+            </div>
+            <div class="textContent">
+              <div class="price">
+                <h3>Palette Pastel Doux</h3>
+                <p class="prices">$6,20</p>
+              </div>
+              <p class="desc">
+                Plongez dans un univers apaisant où les douceurs s'expriment !
+                Cette palette aux teintes nuancées de rose poudré, bleu ciel et
+                lavande offre une harmonie parfaite pour vos créations
+                délicates. Idéale pour les designs romantiques, les projets
+                maternels ou les illustrations poétiques, elle apporte une
+                touche de sérénité à chaque coup de pinceau. 🌸
+              </p>
+              <a href="/show/product.html">
+                <button>Voir plus</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        ©Karine Gélinas Studio <span id="year"></span>. Tous droits réservés.
+      </p>
+    </footer>
+  </body>
+  <script>
+    const yearSpan = document.getElementById("year");
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

@@ -29,11 +29,13 @@
         <!-- Section du logo -->
         <div class="">
           <!-- Logo du site -->
-          <img
-            src="Images/Logo KGS.svg"
-            class="logo"
-            alt="Logo Karine Gélinas Studio"
-          />
+          <a href="/">
+            <img
+              src="Images/Logo KGS.svg"
+              class="logo"
+              alt="Logo Karine Gélinas Studio"
+            />
+          </a>
         </div>
 
         <!-- Section des liens de navigation -->
@@ -46,7 +48,7 @@
             <a href="#about"> <i class="fas fa-user"></i> À propos </a>
             |
             <!-- Lien vers la section Boutique (ancre) -->
-            <a href="#realisations"> <i class="fas fa-store"></i> Boutique </a>
+            <a href="/boutique.html"> <i class="fas fa-store"></i> Boutique </a>
             |
             <!-- Lien vers la section Contact (ancre) -->
             <a href="#contact"> <i class="fas fa-envelope"></i> Contact </a>
@@ -111,19 +113,22 @@
     <section class="shop">
       <div class="realisations container">
         <h2 class="title" data-aos="fade-left">Découvrez la boutique</h2>
-        <div class="product-grid">
+        <div
+          class="product-grid"
+          style="display: flex; justify-content: space-between"
+        >
           <div data-aos="zoom-in" class="product-card">
             <div class="imgBox">
               <img
                 class="img-product"
-                src="https://images.unsplash.com/photo-1581079949099-ea95c980d186?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="./produits/one/01.png"
                 alt="Palette Pastel Doux"
               />
             </div>
             <div class="textContent">
               <div class="price">
                 <h3>Palette Pastel Doux</h3>
-                <p class="prices">$12.99</p>
+                <p class="prices">$6,20</p>
               </div>
               <p class="desc">
                 Plongez dans un univers apaisant où les douceurs s'expriment !
@@ -133,89 +138,9 @@
                 maternels ou les illustrations poétiques, elle apporte une
                 touche de sérénité à chaque coup de pinceau. 🌸
               </p>
-              <button>Acheter</button>
-            </div>
-          </div>
-
-          <div data-aos="zoom-in" class="product-card">
-            <div class="imgBox">
-              <img
-                class="img-product"
-                src="https://images.unsplash.com/photo-1618513462042-29ac20aefe11?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Palette Vibrante"
-              />
-            </div>
-
-            <div class="textContent">
-              <div class="price">
-                <h3>Palette Vibrante</h3>
-                <p class="prices">$15.49</p>
-              </div>
-
-              <p class="desc">
-                Inspirez-vous des richesses de la nature ! Composée d'ocres
-                chaleureux, de verts moussus et de bruns terreux, cette palette
-                évoque l'authenticité et l'équilibre. Parfaite pour les marques
-                éco-responsables, les packaging artisanaux ou les œuvres aux
-                accents organiques, elle transforme chaque projet en une ode à
-                la beauté sauvage. 🌿
-              </p>
-              <button>Acheter</button>
-            </div>
-          </div>
-
-          <div data-aos="zoom-in" class="product-card">
-            <div class="imgBox">
-              <img
-                class="img-product"
-                src="https://cdn.pixabay.com/photo/2014/10/21/19/31/color-fan-497001_1280.jpg"
-                alt="Palette Terre Nature"
-              />
-            </div>
-
-            <div class="textContent">
-              <div class="price">
-                <h3>Palette Vibrante</h3>
-                <p class="prices">$15.49</p>
-              </div>
-
-              <p class="desc">
-                Osez l'audace colorée ! Ce mélange explosif de magenta
-                électrique, de jaune soleil et de turquoise perçant est fait
-                pour capter tous les regards. Conçue pour les designs modernes,
-                les publicités percutantes ou les créations digitales, elle
-                insuffle énergie et confiance en chaque réalisation. Parfaite
-                pour ceux qui aiment se démarquer ! 💥
-              </p>
-              <button>Acheter</button>
-            </div>
-          </div>
-
-          <div data-aos="zoom-in" class="product-card">
-            <div class="imgBox">
-              <img
-                class="img-product"
-                src="https://bfxfacepaintshop.co.uk/cdn/shop/products/FusionBodyartTropicalTigerFX_1024x1024.jpg?v=1624120942"
-                alt="Palette Terre Nature"
-              />
-            </div>
-
-            <div class="textContent">
-              <div class="price">
-                <h3>Palette Fusion Tropicale</h3>
-                <p class="prices">$16.99</p>
-              </div>
-
-              <p class="desc">
-                La Palette Fusion Tropicale éclate en couleurs vibrantes
-                (corail, bleu lagune, jaune mangue), évoquant une énergie
-                estivale. Parfaite pour illustrations dynamiques, identités de
-                marques vives et designs événementiels, elle stimule créativité
-                et optimisme. Idéale pour ceux qui veulent insuffler une
-                ambiance de vacances ensoleillées à leurs projets, toute l'année
-                ! 🎨
-              </p>
-              <button>Acheter</button>
+              <a href="/show/product.html">
+                <button>Voir plus</button>
+              </a>
             </div>
           </div>
         </div>

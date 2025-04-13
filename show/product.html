@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=Af3oU0qlzT2nt54QqEsa8cAzOQs9V6D3ueezmcPIZd_DCUNqBNFubOwiIdGG7S8zcrl5gfdEKN36z0in&currency=USD"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles -->
@@ -29,15 +32,17 @@
         <!-- Section du logo -->
         <div class="">
           <!-- Logo du site -->
-          <img
-            src="../Images/Logo KGS.svg"
-            class="logo"
-            alt="Logo Karine Gélinas Studio"
-          />
+          <a href="/">
+            <img
+              src="../Images/Logo KGS.svg"
+              class="logo"
+              alt="Logo Karine Gélinas Studio"
+            />
+          </a>
         </div>
 
         <!-- Section des liens de navigation -->
-        <div class="nav">
+        <div class="nav" id="navbar">
           <h3>
             <!-- Lien vers la page d'accueil -->
             <a href="/"> <i class="fas fa-home"></i> Accueil </a>
@@ -54,7 +59,7 @@
         </div>
 
         <!-- Icône du menu burger pour le responsive (mobile) -->
-        <div class="menu-icons">
+        <div class="menu-icons" id="menuToggle">
           <i class="fas fa-bars"></i>
         </div>
       </div>
@@ -75,17 +80,32 @@
       <div class="product-details">
         <h1><i class="fas fa-box"></i> Palette Pastel Doux</h1>
         <p class="description">
-          Plongez dans un univers apaisant où les douceurs s'expriment ! Cette
-          palette aux teintes nuancées de rose poudré, bleu ciel et lavande
-          offre une harmonie parfaite pour vos créations délicates. Idéale pour
-          les designs romantiques, les projets maternels ou les illustrations
-          poétiques, elle apporte une touche de sérénité à chaque coup de
-          pinceau. 🌸
+          Voyager dans l’espace grâce à ce nuancier qui inclut 5 couleurs
+          harmonieuses,3 typographies qui s’agencent parfaitement entre elles et
+          avec le thème abordé ainsi que 5 images libre de droit vous permettant
+          de créer des milliers de projets. 🌸
+        </p>
+        <p>
+          Pensés pour les graphistes, créateurs de contenu, illustrateurs,
+          designer web, rédacteurs, auteurs,et toutes personnes créatives, ce
+          nuancier offrent une solution simple, rapide et clé en main pour
+          enrichir vos projets créatifs autour de l’espace tout en assurant une
+          cohérence visuelle professionnelle.
+        </p>
+        <p>
+          <strong> Veuillez noter </strong>: ce fichier est destiné à un usage
+          personnel et commercial. La revente ou la distribution du fichier tel
+          quel est interdite.
         </p>
         <p class="price"><i class="fas fa-tag"></i> $6,20</p>
         <button class="buy-btn">
           <i class="fas fa-shopping-cart"></i> Acheter maintenant
         </button>
+        <!-- Zone du bouton PayPal cachée -->
+        <div
+          id="paypal-button-container"
+          style="display: none; margin-top: 20px"
+        ></div>
       </div>
     </section>
 
@@ -97,6 +117,47 @@
       </p>
     </footer>
   </body>
+
+  <script>
+    // Sélectionne le bouton HTML
+    const buyBtn = document.querySelector(".buy-btn");
+    const paypalContainer = document.getElementById("paypal-button-container");
+
+    buyBtn.addEventListener("click", () => {
+      buyBtn.style.display = "none"; // On cache le bouton "Acheter maintenant"
+      paypalContainer.style.display = "block"; // Et on affiche PayPal
+    });
+
+    paypal
+      .Buttons({
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            purchase_units: [
+              {
+                amount: { value: "6.20" },
+                description: "Voyager dans l’espace grâce à ce nuancier...",
+              },
+            ],
+          });
+        },
+        onApprove: function (data, actions) {
+          return actions.order.capture().then(function (details) {
+            alert(
+              "Merci " + details.payer.name.given_name + " pour votre achat !"
+            );
+
+            // Téléchargement automatique du fichier ZIP
+            const link = document.createElement("a");
+            link.href = "/25001-Nuancier-Voyage.zip";
+            link.download = "25001-Nuancier-Voyage.zip";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          });
+        },
+      })
+      .render("#paypal-button-container");
+  </script>
   <script>
     const yearSpan = document.getElementById("year");
     const currentYear = new Date().getFullYear();
@@ -134,4 +195,5 @@
     // Réajuste le carrousel lors du redimensionnement
     window.addEventListener("resize", updateCarousel);
   </script>
+  <script src="/menu.js" type="module"></script>
 </html>

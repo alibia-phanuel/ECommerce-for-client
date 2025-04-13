@@ -28,13 +28,30 @@
     width: 100%;
     padding: 30px 0px;
     left: 0;
-    transform: translatex(-1000px);
-    -webkit-transform: translatex(-1000px);
-    -moz-transform: translatex(-1000px);
-    -ms-transform: translatex(-1000px);
-    -o-transform: translatex(-1000px);
+    transition: all;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+    transform: translatex(-100%);
+    -webkit-transform: translatex(-100%);
+    -moz-transform: translatex(-100%);
+    -ms-transform: translatex(-100%);
+    -o-transform: translatex(-100%);
   }
 
+  .navi {
+    transition: all;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+    transform: translatex(0%);
+    -webkit-transform: translatex(0%);
+    -moz-transform: translatex(0%);
+    -ms-transform: translatex(0%);
+    -o-transform: translatex(0%);
+  }
   .nav h3 {
     display: flex;
     flex-direction: column;
@@ -71,7 +88,7 @@
   .shop-hero-product {
     height: auto;
   }
-    .carousel-container {
+  .carousel-container {
     width: 100%;
     height: auto;
   }
@@ -89,7 +106,7 @@
   button.next {
     font-size: 1.5rem;
     padding: 8px;
-  }"
+  }
 }
 
 @media screen and (max-width: 1276px) {

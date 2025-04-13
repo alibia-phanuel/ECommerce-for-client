@@ -134,6 +134,10 @@ header {
 .menu-icons {
   display: none;
 }
+.menu-open {
+  background-color: #333;
+  color: white;
+}
 /* Hero section */
 
 .hero {
@@ -438,7 +442,7 @@ footer {
 .shop-hero-product {
   flex-wrap: wrap;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   padding: 8px;

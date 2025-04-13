@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Styles -->
     <link
       rel="stylesheet"
@@ -29,15 +30,16 @@
         <!-- Section du logo -->
         <div class="">
           <!-- Logo du site -->
-          <img
-            src="Images/Logo KGS.svg"
-            class="logo"
-            alt="Logo Karine Gélinas Studio"
-          />
+          <a href="/">
+            <img
+              src="Images/Logo KGS.svg"
+              class="logo"
+              alt="Logo Karine Gélinas Studio"
+            />
+          </a>
         </div>
-
         <!-- Section des liens de navigation -->
-        <div class="nav">
+        <div class="nav" id="navbar">
           <h3>
             <!-- Lien vers la page d'accueil -->
             <a href="/"> <i class="fas fa-home"></i> Accueil </a>
@@ -54,7 +56,7 @@
         </div>
 
         <!-- Icône du menu burger pour le responsive (mobile) -->
-        <div class="menu-icons">
+        <div class="menu-icons" id="menuToggle">
           <i class="fas fa-bars"></i>
         </div>
       </div>
@@ -84,16 +86,14 @@
             </div>
             <div class="textContent">
               <div class="price">
-                <h3>Palette Pastel Doux</h3>
+                <h3>Voyage dans l'espace</h3>
                 <p class="prices">$6,20</p>
               </div>
               <p class="desc">
-                Plongez dans un univers apaisant où les douceurs s'expriment !
-                Cette palette aux teintes nuancées de rose poudré, bleu ciel et
-                lavande offre une harmonie parfaite pour vos créations
-                délicates. Idéale pour les designs romantiques, les projets
-                maternels ou les illustrations poétiques, elle apporte une
-                touche de sérénité à chaque coup de pinceau. 🌸
+                Voyager dans l’espace grâce à ce nuancier qui inclut 5 couleurs
+                harmonieuses,3 typographies qui s’agencent parfaitement entre
+                elles et avec le thème abordé ainsi que 5 images libre de droit
+                vous permettant de créer des milliers de projets. 🌸
               </p>
               <a href="/show/product.html">
                 <button>Voir plus</button>
@@ -116,7 +116,9 @@
     yearSpan.textContent = currentYear;
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script>
     AOS.init();
   </script>
+  <script src="/menu.js" type="module"></script>
 </html>
